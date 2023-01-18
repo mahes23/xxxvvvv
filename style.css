@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-padding: 5rem;
+}
+
+header{
+    background-color:whitesmoke;
+    height: 10vh;
+    font-size: 18px;
+    color: black;
+    position: sticky;
+    top: 0;
+    
+}
+.head{
+    display: flex;
+    padding:20px;
+}
+body{
+    background-color: white;
+    width: 100%;
+    background: fixed;
+}
+.head h1{
+    text-transform: uppercase;
+    width: 500px;
+    margin-left: 4%;
+
+}
+.head a{
+    margin-left: 4%;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+}
+.head a:hover{
+    color:red;
+    border-top: 3px solid brown;
+}
+.search {
+    margin-left: 5%;
+    position: relative;
+    width: 200px;
+    cursor: text;
+    
+}
+.search input {
+    position: absolute;
+   text-transform: capitalize;
+   border-radius: 20px;
+   border-color:2px solid gray;
+   width: 150px;
+   height:4vh;
+   
+}
+.search i{
+    position: absolute;
+    left: 60%;
+    top: 3px; 
+}
+.search:hover input{
+    background-color:bisque;
+}
+.social-links{
+    width:150px;
+   margin-left:2%;
+}
+.social-links i{
+margin-left: 5%;
+}
+/*....//////blogshop.....///*/
+.blogshop{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+   
+}
+.blog{
+background-color:black;
+width: 100%;
+}
+.blog img{
+   height: 100vh;
+   width: 100%;
+}
+/*carousel using*/
+.shoping{
+  width:100%;
+  background-color: yellow;
+  overflow: hidden;
+}
+.slide{
+    width: 400%;
+    display: flex;
+    height: 100vh;
+}
+.slide img{
+    width: 30%;
+    height: 100vh;
+    transition: all 0.15s ease;
+}
+.slide input{
+    display: none;
+}
+.dot{
+    display: flex;
+    margin:2px;
+    justify-content: center;
+    align-items: center;
+    top: 90%;
+    margin-left: 25%;
+    position: absolute;
+}
+.dot label{
+    width:10px;
+    height: 10px;
+    border-radius: 10%;
+    border: 2px solid black;
+    transition: all 0.15s ease;
+    margin: 5px;
+    background-color:white;
+}
+.dot label:hover {
+    background-color: aqua;
+}
+#img1:checked~.m1{
+    margin-left: 0;
+}
+#img2:checked~.m2{
+    margin-left:-30%;
+}
+#img3:checked~.m3{
+    margin-left: -60%;
+}
+#img4:checked~.m4{
+    margin-left: -120%;
+}
+/*///////section card///////*/
+.card{
+    width: 100%;
+    height: 100vh;
+   
+}
+.card h1{
+    margin-left: 45%;
+    text-transform:capitalize;
+    font-size: 30px;
+    padding-top: 3%;
+}
+.card-items{
+    display: flex;
+    margin-top: 2%;
+    width: 100%;
+    justify-content: space-around;
+}
+.card-items1{
+  
+    width: 25%;
+    height: 70vh;
+    border-radius:10px;
+    box-shadow: 1px 1px 1px 1px black;
+}
+.card-items1 img{
+    width: 100%;
+}
+.card-items1 p{
+text-transform: capitalize;
+margin-left: 3%;
+
+}
+.card-items1 h2{
+    margin-left: 3%;
+    margin-top: 3%;
+    text-transform: capitalize;
+    width: 90%;
+    height: 8vh;
+}
+.card-items1 hr{
+    margin-top: 15%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.social-links1{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+/*shop section*/
+.shop{
+    width: 100%;
+    height: 100vh;
+   
+}
+.shop h1{
+    margin-top: 10%;
+    text-align: center;
+    text-transform: capitalize;
+}
+.shop-items{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-around;
+   
+}
+.shop-items1 h2{
+    text-align: center;
+}
+
+/*...bellaooo...*/
+.bello{
+    width: 100%;
+    height: 100vh;
+    /*background-color: aqua;*/
+}
+.bellodiv{
+    display: flex;
+}
+.blogdiv1{
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 10%;
+    text-transform: capitalize;
+}
+.blogdiv1 p{
+    width: 300px;
+   margin-left: 30%;
+}
+.blogdiv2{
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 10%;
+    text-transform: capitalize;
+}
+.blogdiv2 img{
+    width: 90%;
+}
+/*.....follow me....*/
+.followme{
+    margin-top: 5%;
+    text-transform: capitalize;
+    text-align: center;
+    font-size:25px;
+}
+.rightside{
+    margin-top: 3%;
+}
+.rightside img{
+    width: 20%;
+    height: 40%;
+}
+.leftside img{
+    width: 20%;
+    height: 40%;
+}
+.leftside{
+    margin-top: 3%;
+}
+/*....footter.....*/
+.footmain{
+    margin-top: 4%;
+    width: 100%;
+   
+   
+}
+.twosidefoot{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+   
+}
+.rightfoot{
+   width: 50%;
+   padding-left: 15%;
+   padding-top: 5%;
+}
+.mail{
+    margin-top: 5%;
+    width: 80%;
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height:50px;
+}
+.mail button{
+    width: 20%;
+    height: 30px;
+
+}
+.mail button:hover{
+    background-color:black;
+}
+.mail input{
+    width:50%;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid gray;
+}
+.mail:hover input{
+border-bottom: 3px solid pink;
+transition: 0s;
+}
+.leftfoot{
+    width: 50%;
+   padding-left: 15%;
+   padding-top: 5%;
+   font-size: 25px;
+   text-transform: capitalize;
+   line-height: 60px;
+}
+.form{
+ display: flex; 
+ justify-content: space-between;  
+ width: 85%;
+}
+.form input{
+    width:100%;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid gray;
+}
+button{
+    width: 20%;
+    height: 5%;
+    text-transform: capitalize;
+}
+.msg{
+    width:70%;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid gray;
+}
+button:hover{
+    background-color: black;
+    color: #fff;
+}
+.card button {
+    text-align: center;
+    width: 10%;
+    text-transform: capitalize;
+    margin-top: 3%;
+    margin-left: 45%;
+    
+   }
+   .shop button {
+    text-align: center;
+    width: 10%;
+    text-transform: capitalize;
+    margin-top: 3%;
+    margin-left: 45%;
+}
+
+
+/*.......css responsive 480px....*/
+@media only screen and (max-width:480px) {
+    .head h1{
+        text-transform: uppercase;
+        width: 100px;
+        margin-left:0%;
+        font-size: 13px;
+    }
+    .head a{
+        margin-left:1%;
+        font-size: 12px;
+        
+    }
+    .search input {
+       width: 50px;
+       height:3vh;
+       
+    }
+    .search i{
+        position: absolute;
+        left:1.5rem;
+        top: 3px; 
+        width: 5px;
+    }
+    .social-links{
+        width:100px;
+       
+    }
+    .social-links i{
+    margin-left:1px;
+    }
+    .blogshop{
+        width: 100%;
+        height: 100vh;
+        display:block;
+    }
+    .card-items{
+        display: block;
+        margin-top: 2%;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .shop-items{
+        width: 100%;
+        height: 50vh;
+        display: block;
+        margin-top: 5%;
+        justify-content: space-around;
+       text-align: center;
+    }
+    .card{
+        width: 100%;
+        height: 100vh;
+        margin-top: 220%;
+    }
+    .card-items1{
+        width: 50%;
+        height: 50%;
+        margin-left: 5rem;
+        margin-top: 1rem;
+    }
+    .shop{
+        width: 100%;
+        height: 100vh;
+       margin-top: 100%;
+    }
+    .bello{
+        width: 100%;
+        height: 100vh;
+        /*background-color: aqua;*/
+        margin-top: 200%;
+    }
+    .bellodiv{
+        display: block;
+        
+    }
+    .twosidefoot{
+        display: block;
+        width: 100%;
+        height: 100vh;
+       
+    }
+    .card h1{
+        margin-left: 25%;
+        text-transform:capitalize;
+        font-size: 20px;
+        padding-top: 3%;
+    }
+    .blogdiv1{
+        width: 100%;
+        text-align: center;
+        padding-top: 10%;
+        text-transform: capitalize;
+       height: 80vh;
+    }
+    .blogdiv1 img{
+        margin-left: 2rem;
+    }
+    .blogdiv1 p{
+        margin-left: 3rem;
+    }
+    .blogdiv2 img{
+        margin-top: 3%;
+        width: 80%;
+        height: 17rem;
+        margin-left:1rem;
+        margin-top: 1%;
+    }
+    .blogdiv2{
+       
+        width: 100%;
+        height: 100vh;
+    }
+    .followme{
+        width: 100%;
+        height: 100vh;
+        margin-top: 80%;
+    }
+    .twoside{
+        margin-top: 5%;
+    }
+    .rightside img{
+        width: 40%;
+        height: 40%;
+    }
+    .leftside img{
+        width: 40%;
+        height: 40%;
+    }
+    .rightfoot{
+        width: 100%;
+        padding-left: 15%;
+        padding-top: 5%;
+        font-size: 20px;
+     }
+     .leftfoot{
+        width: 100%;
+       padding-left: 15%;
+       padding-top: 5%;
+       font-size: 20px;
+       text-transform: capitalize;
+       line-height: 60px;
+    }
+    .card button {
+        text-align: center;
+        width: 30%;
+        text-transform: capitalize;
+        margin-top: 5%;
+        margin-left: 30%;
+        
+       }
+       .shop button {
+        text-align: center;
+        width: 30%;
+        text-transform: capitalize;
+        margin-top: 120%;
+        margin-left: 30%;
+    }
+    .bello button{
+        text-align: center;
+        width: 30%;
+        text-transform: capitalize;
+        margin-top: 5%;
+        margin-left: 15%;
+    }
+    .dot{
+    padding-top:210%;
+    left: 3rem;
+    }
+    .search {
+        margin-left:1%;
+        position: relative;
+        width: 100px;
+        
+        
+    }
+}
+
